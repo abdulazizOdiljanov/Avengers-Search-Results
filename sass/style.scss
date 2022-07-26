@@ -1,0 +1,244 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Fraunces';
+}
+
+// Veribles
+
+$blue: #3478F6;
+$grey: #eee;
+$red: #CB4447;
+$white: #fff;
+$light-green: #D5EBEF;
+
+
+// fonts
+
+@font-face {
+   font-family: 'Fraunces';
+   src: url('../fonts/Fraunces-9ptBlack.woff2') format('woff2'),
+      url('../fonts/Fraunces-9ptBlack.woff') format('woff'),
+      url('../fonts/Fraunces-9ptBlack.ttf') format('truetype');
+   font-weight: 900;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: 'Fraunces 9pt S000';
+   src: url('../fonts/Fraunces9ptS000-Black.woff2') format('woff2'),
+      url('../fonts/Fraunces9ptS000-Black.woff') format('woff'),
+      url('../fonts/Fraunces9ptS000-Black.ttf') format('truetype');
+   font-weight: 900;
+   font-style: normal;
+   font-display: swap;
+}
+
+.container {
+   margin: 0 auto;
+   display: block;
+   max-width: 1300px;
+   text-align: center;
+}
+
+
+
+
+.results__box {
+   display: grid;
+   grid-template-columns: 1fr 3fr;
+   margin-top: 50px;
+   gap: 50px;
+
+   form {
+
+      input,
+      button,
+      select {
+         width: 100%;
+      }
+
+      input,
+      select,
+      option {
+         padding: 5px;
+         margin-bottom: 12px;
+         border: 1px solid $grey;
+         border-radius: 5px;
+         font-weight: 500;
+         text-transform: capitalize;
+         font-size: 18px;
+
+         &:focus {
+            outline: none;
+            border: 4px solid $grey;
+         }
+      }
+
+      button {
+         padding: 10px;
+         border: none;
+         background-color: $blue;
+         margin-bottom: 20px;
+         border-radius: 5px;
+
+         a {
+            text-decoration: none;
+            color: $white;
+            font-size: 17px;
+         }
+      }
+   }
+
+   .bookmark {
+      &__title--text {
+         text-align: center;
+         margin-top: 40px;
+         margin-bottom: 10px;
+      }
+
+      .card {
+         border: 2px solid $grey;
+         padding: 20px;
+         text-align: left;
+
+         &:first-child {
+            border-radius: 10px 10px 0 0;
+         }
+
+         &:last-child {
+            border-radius: 0 0 10px 10px;
+         }
+
+         button {
+            width: 30%;
+            border: none;
+            padding: 9px 15px;
+            margin-top: 10px;
+            border-radius: 5px;
+            background-color: $red;
+
+            a {
+               text-decoration: none;
+               color: $white;
+            }
+         }
+      }
+   }
+}
+
+
+
+.results__item:nth-child(2) {
+   text-align: left;
+
+   .numbers {
+      font-size: 18px;
+
+      span {
+         font-size: 19px;
+         color: #3b3b3b;
+      }
+   }
+
+   .results__item--desc {
+      width: 95%;
+      margin-top: 20px;
+      padding: 20px;
+      background-color: $light-green;
+      border-radius: 7px;
+      color: #00804b;
+   }
+
+   .cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+
+   }
+
+   .card {
+      margin-top: 40px;
+      max-width: 90%;
+      border: 2px solid $grey;
+      border-radius: 10px;
+
+      img {
+         border-radius: 10px 10px 0 0;
+         width: 100%;
+      }
+
+      h3,
+      p {
+         padding: 0 20px;
+      }
+
+      .data {
+         padding: 10px 20px;
+      }
+
+      .btns {
+         margin-bottom: 20px;
+         display: flex;
+         width: 100%;
+         align-items: center;
+         text-align: center;
+         justify-content: center;
+         justify-content: space-evenly;
+
+         .btn {
+            margin-top: 20px;
+            padding: 7px 15px;
+            background-color: transparent;
+            border-radius: 4px;
+
+            &:nth-child(1) {
+               border: 2px solid $blue;
+               color: $blue;
+            }
+
+            &:nth-child(2) {
+               border: 2px solid #4df5ef;
+               color: #4df5ef;
+            }
+
+            &:nth-child(3) {
+               border: 2px solid green;
+               color: green;
+            }
+         }
+      }
+
+
+   }
+
+   .pages {
+      margin-top: 40px;
+      text-align: center;
+      align-items: center;
+
+      .btn {
+         background-color: transparent;
+         color: $blue;
+         padding: 10px 15px;
+         border: 2px solid $grey;
+         margin: 0 -2px;
+         font-size: 18px;
+
+
+
+         &:first-child {
+            border-radius: 5px 0 0 5px;
+            background-color: $blue;
+            border: 2px solid $blue;
+            color: $white;
+         }
+
+         &:last-child {
+            border-radius: 0 5px 5px 0;
+         }
+      }
+   }
+}

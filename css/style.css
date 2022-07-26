@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Fraunces";
+}
+
+@font-face {
+  font-family: "Fraunces";
+  src: url("../fonts/Fraunces-9ptBlack.woff2") format("woff2"), url("../fonts/Fraunces-9ptBlack.woff") format("woff"), url("../fonts/Fraunces-9ptBlack.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Fraunces 9pt S000";
+  src: url("../fonts/Fraunces9ptS000-Black.woff2") format("woff2"), url("../fonts/Fraunces9ptS000-Black.woff") format("woff"), url("../fonts/Fraunces9ptS000-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+.container {
+  margin: 0 auto;
+  display: block;
+  max-width: 1300px;
+  text-align: center;
+}
+
+.results__box {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  margin-top: 50px;
+  gap: 50px;
+}
+.results__box form input,
+.results__box form button,
+.results__box form select {
+  width: 100%;
+}
+.results__box form input,
+.results__box form select,
+.results__box form option {
+  padding: 5px;
+  margin-bottom: 12px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  font-weight: 500;
+  text-transform: capitalize;
+  font-size: 18px;
+}
+.results__box form input:focus,
+.results__box form select:focus,
+.results__box form option:focus {
+  outline: none;
+  border: 4px solid #eee;
+}
+.results__box form button {
+  padding: 10px;
+  border: none;
+  background-color: #3478F6;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+.results__box form button a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 17px;
+}
+.results__box .bookmark__title--text {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+.results__box .bookmark .card {
+  border: 2px solid #eee;
+  padding: 20px;
+  text-align: left;
+}
+.results__box .bookmark .card:first-child {
+  border-radius: 10px 10px 0 0;
+}
+.results__box .bookmark .card:last-child {
+  border-radius: 0 0 10px 10px;
+}
+.results__box .bookmark .card button {
+  width: 30%;
+  border: none;
+  padding: 9px 15px;
+  margin-top: 10px;
+  border-radius: 5px;
+  background-color: #CB4447;
+}
+.results__box .bookmark .card button a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.results__item:nth-child(2) {
+  text-align: left;
+}
+.results__item:nth-child(2) .numbers {
+  font-size: 18px;
+}
+.results__item:nth-child(2) .numbers span {
+  font-size: 19px;
+  color: #3b3b3b;
+}
+.results__item:nth-child(2) .results__item--desc {
+  width: 95%;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #D5EBEF;
+  border-radius: 7px;
+  color: #00804b;
+}
+.results__item:nth-child(2) .cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+.results__item:nth-child(2) .card {
+  margin-top: 40px;
+  max-width: 90%;
+  border: 2px solid #eee;
+  border-radius: 10px;
+}
+.results__item:nth-child(2) .card img {
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+}
+.results__item:nth-child(2) .card h3,
+.results__item:nth-child(2) .card p {
+  padding: 0 20px;
+}
+.results__item:nth-child(2) .card .data {
+  padding: 10px 20px;
+}
+.results__item:nth-child(2) .card .btns {
+  margin-bottom: 20px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+.results__item:nth-child(2) .card .btns .btn {
+  margin-top: 20px;
+  padding: 7px 15px;
+  background-color: transparent;
+  border-radius: 4px;
+}
+.results__item:nth-child(2) .card .btns .btn:nth-child(1) {
+  border: 2px solid #3478F6;
+  color: #3478F6;
+}
+.results__item:nth-child(2) .card .btns .btn:nth-child(2) {
+  border: 2px solid #4df5ef;
+  color: #4df5ef;
+}
+.results__item:nth-child(2) .card .btns .btn:nth-child(3) {
+  border: 2px solid green;
+  color: green;
+}
+.results__item:nth-child(2) .pages {
+  margin-top: 40px;
+  text-align: center;
+  align-items: center;
+}
+.results__item:nth-child(2) .pages .btn {
+  background-color: transparent;
+  color: #3478F6;
+  padding: 10px 15px;
+  border: 2px solid #eee;
+  margin: 0 -2px;
+  font-size: 18px;
+}
+.results__item:nth-child(2) .pages .btn:first-child {
+  border-radius: 5px 0 0 5px;
+  background-color: #3478F6;
+  border: 2px solid #3478F6;
+  color: #fff;
+}
+.results__item:nth-child(2) .pages .btn:last-child {
+  border-radius: 0 5px 5px 0;
+}/*# sourceMappingURL=style.css.map */

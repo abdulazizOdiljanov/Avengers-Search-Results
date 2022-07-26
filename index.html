@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Movies Catalog</title>
+   <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+   <section class="search__results">
+      <div class="container">
+
+         <h1 class="results__title--text">Movies catalog</h1>
+         <div class="results__box">
+
+            <!-- first -->
+            <div class="results__item">
+               <form>
+                  <label>
+                     <input type="search" placeholder="...">
+                     <input type="search" placeholder="...">
+                     <select name="#" id="#">
+                        <option selected>All</option>
+                        <option value="1">All</option>
+                        <option value="2">All</option>
+                        <option value="3">All</option>
+                     </select>
+
+                     <select name="#" id="#">
+                        <option selected>Rating (high to low)</option>
+                        <option value="1">Rating (high to low)</option>
+                        <option value="2">Rating (high to low)</option>
+                        <option value="3">Rating (high to low)</option>
+                     </select>
+
+                     <button class="btn"><a href="#" class="btn__linc">Search</a></button>
+                  </label>
+               </form>
+
+               <div class="bookmark">
+                  <h2 class="bookmark__title--text">Bookmarked Movies</h2>
+                  <div class="bookmark__cards">
+                     <div class="card">
+                        <h3 class="card__title--text">Avengers: Infinity War</h3>
+                        <button class="btn"><a href="#" class="btn__linc">remove</a></button>
+                     </div>
+                     <div class="card">
+                        <h3 class="card__title--text">The Avengers</h3>
+                        <button class="btn"><a href="#" class="btn__linc">remove</a></button>
+                     </div>
+                     <div class="card">
+                        <h3 class="card__title--text">12 Years a Slave</h3>
+                        <button class="btn"><a href="#" class="btn__linc">remove</a></button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <!-- second -->
+            <div class="results__item">
+               <p class="numbers">Search results: <span>39</span></p>
+               <p class="results__item--desc">Use the form on the left to search for a movie</p>
+               <div class="results__item--cards cards">
+                  <!-- 1 -->
+                  <div class="card">
+                     <img src="./img/1.jpg" class="card__img">
+                     <h3 class="card__title--text">Avengers: Infinity War</h3>
+                     <div class="data">2018</div>
+                     <p class="stars">8.7</p>
+                     <div class="btns">
+                        <button class="btn">Watch Trailer</button>
+                        <button class="btn">More Info</button>
+                        <button class="btn">Bookmark</button>
+                     </div>
+                  </div>
+                  <!-- 2 -->
+                  <div class="card">
+                     <img src="./img/2.jpg" class="card__img">
+                     <h3 class="card__title--text">The Avengers</h3>
+                     <div class="data">2022</div>
+                     <p class="stars">8.1</p>
+                     <div class="btns">
+                        <button class="btn">Watch Trailer</button>
+                        <button class="btn">More Info</button>
+                        <button class="btn">Bookmark</button>
+                     </div>
+                  </div>
+                  
+               </div>
+
+               <div class="pages">
+                  <div class="btns">
+                     <button class="btn active">1</button>
+                     <button class="btn">2</button>
+                     <button class="btn">3</button>
+                     <button class="btn">4</button>
+                  </div>
+               </div>
+            </div>
+
+
+         </div>
+      </div>
+   </section>
+</body>
+
+</html>
